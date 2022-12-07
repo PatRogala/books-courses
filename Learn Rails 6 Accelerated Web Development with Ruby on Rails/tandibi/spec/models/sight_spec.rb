@@ -20,7 +20,7 @@ require 'rails_helper'
 
 RSpec.describe Sight, type: :model do
   describe '#valid?' do
-    it 'should validate activity type correctly' do
+    it 'should validate activity type correc1tly' do
       sight = build(:sight)
 
       sight.activity_type = 'unknown'
