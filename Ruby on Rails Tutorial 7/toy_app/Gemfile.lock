@@ -89,6 +89,7 @@ GEM
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     erubi (1.12.0)
+    ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.13.0)
@@ -128,6 +129,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.14.3-x86_64-darwin)
       racc (~> 1.4)
+    pg (1.3.5)
     public_suffix (5.0.1)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -167,6 +169,14 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.2.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -183,6 +193,7 @@ GEM
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     thor (1.2.1)
+    tilt (2.1.0)
     timeout (0.3.2)
     turbo-rails (1.1.1)
       actionpack (>= 6.0.0)
@@ -211,21 +222,22 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  bootsnap
-  capybara
-  debug
-  importmap-rails
-  jbuilder
-  puma (~> 5.0)
-  rails (~> 7.0.3)
-  selenium-webdriver
-  sprockets-rails
-  sqlite3 (~> 1.4)
-  stimulus-rails
-  turbo-rails
-  tzinfo-data
-  web-console
-  webdrivers
+  bootsnap (= 1.12.0)
+  capybara (= 3.37.1)
+  debug (= 1.5.0)
+  importmap-rails (= 1.1.0)
+  jbuilder (= 2.11.5)
+  pg (= 1.3.5)
+  puma (= 5.6.4)
+  rails (= 7.0.4)
+  sassc-rails (= 2.1.2)
+  selenium-webdriver (= 4.2.0)
+  sprockets-rails (= 3.4.2)
+  sqlite3 (= 1.4.2)
+  stimulus-rails (= 1.0.4)
+  turbo-rails (= 1.1.1)
+  web-console (= 4.2.0)
+  webdrivers (= 5.0.0)
 
 RUBY VERSION
    ruby 3.1.2p20
