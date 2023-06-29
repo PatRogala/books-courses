@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  resurces :widgets, only: [:show]
+  resources :widgets, only: %i[index show]
 
-  get 'manufacturer/:id', to: 'manufacturers#show'
+  ####
+  # Custom routes start here
+  #
+  # For each new custom route:
+  #
+  # * Be sure you have the canonical route declared above
+  # * Add the new custom route below the existing ones
+  # * Document why it's needed
+  # * Explain anything else non-standard
+
+  # Used in podcast ads for the 'amazing' campaign
+  get '/amazing', to: redirect('/widgets')
 end
