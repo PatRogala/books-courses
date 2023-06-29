@@ -16,6 +16,10 @@ gem 'brakeman'
 # dependencies for known vulnerabilities
 gem 'bundler-audit'
 
+# lograge changes Rails' logging to a more
+# traditional one-line-per-event format
+gem 'lograge'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.5', '>= 7.0.5.1'
 
