@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resurces :widgets
+  resurces :widgets, only: [:show]
 
   get 'manufacturer/:id', to: 'manufacturers#show'
 end
