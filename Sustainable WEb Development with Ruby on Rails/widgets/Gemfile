@@ -8,6 +8,14 @@ ruby '3.1.0'
 # development and testing
 gem 'dotenv-rails', groups: %i[development test]
 
+# Brakeman analyzes our code
+# for security vulnerabilities
+gem 'brakeman'
+
+# bundler-audit enables bundle audit which analyzes our
+# dependencies for known vulnerabilities
+gem 'bundler-audit'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.5', '>= 7.0.5.1'
 
