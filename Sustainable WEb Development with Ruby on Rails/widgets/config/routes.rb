@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :widgets, only: %i[index show]
+  resources :widget_ratings, only: [:create]
 
   ####
   # Custom routes start here
