@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resurces :widgets
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'manufacturer/:id', to: 'manufacturers#show'
 end
