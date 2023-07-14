@@ -1,9 +1,0 @@
-<h1><%= @widget.name %></h1>
-<h2>ID #<%= styled_widget_id(@widget.widget_id) %></h2>
-<% if flash[:notice].present? %>
-  <aside>
-    <%= flash[:notice] %>
-  </aside>
-<% end %>
-
-<%= widget_rating_component(@widget) %>
