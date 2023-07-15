@@ -41,3 +41,5 @@ yarn-debug.log*
 # secrets we need for dev and test, so
 # we really don't want this in version control
 .env.*.local
+
+/node_modules
