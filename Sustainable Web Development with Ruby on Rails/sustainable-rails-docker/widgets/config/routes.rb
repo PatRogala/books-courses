@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     resources :widgets, only: [ :show, :update, :destroy ]
   end
 
+  if Rails.env.development?
+    resources :design_system_docs, only: [ :index ]
+  end
+
   ####
   # Custom routes start here
   #
