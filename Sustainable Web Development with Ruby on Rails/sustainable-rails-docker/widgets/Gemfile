@@ -16,6 +16,10 @@ gem "brakeman"
 # dependencies for known vulnerabilities
 gem "bundler-audit"
 
+# lograge changes Rails' logging to a more
+# traditional one-line-per-event format
+gem "lograge"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
 # Use postgresql as the database for Active Record
