@@ -8,6 +8,14 @@ ruby '2.7.2'
 # development and testing
 gem "dotenv-rails", groups: [:development, :test]
 
+# Brakeman analyzes our code
+# for security vulnerabilities
+gem "brakeman"
+
+# bundler-audit enables bundle audit which analyzes our
+# dependencies for known vulnerabilities
+gem "bundler-audit"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.4'
 # Use postgresql as the database for Active Record
