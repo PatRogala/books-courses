@@ -34,3 +34,12 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# The .env file is used for both dev and test
+# and creates more problems than is solves
+.env
+
+# .env.*.local files are where we put actual
+# secrets we need for dev and test, so
+# we really don't want this in version control
+.env.*.local
