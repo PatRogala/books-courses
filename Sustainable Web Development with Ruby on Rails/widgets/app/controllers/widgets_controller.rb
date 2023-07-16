@@ -4,4 +4,11 @@ class WidgetsController < ApplicationController
                              manufacturer_id: rand(100),
                              name: "Widget #{params[:id]}")
   end
+
+  def index
+    @widgets = [
+      OpenStruct.new(id: 1, name: "Stembolt"),
+      OpenStruct.new(id: 2, name: "flux Capacitor"),
+    ]
+  end
 end
