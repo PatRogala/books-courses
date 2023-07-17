@@ -2,8 +2,11 @@
 
 set -e
 
-echo "[ bin/ci ] Runnign unit tests"
+echo "[ bin/ci ] Running unit tests"
 bin/rails test
+
+echo "[ bin/ci ] Running JavaScript unit tests"
+yarn jest --no-colors
 
 echo "[ bin/ci ] Running system tests"
 bin/rails test:system
