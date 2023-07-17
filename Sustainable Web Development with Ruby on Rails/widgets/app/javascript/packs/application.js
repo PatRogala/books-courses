@@ -19,3 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 ActiveStorage.start()
+
+import widget_ratings from "widget_ratings"
+widget_ratings.start(window)
