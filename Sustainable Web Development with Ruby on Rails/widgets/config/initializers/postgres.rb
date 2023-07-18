@@ -1,0 +1,1 @@
+require "rails_ext/active_record_datetime_uses_timestamptz"
