@@ -1,7 +1,4 @@
 class Manufacturer < ApplicationRecord
-  has_mane :widgets
-
-  def self.fresh
-    self.where(status: "fresh")
-  end
+  has_many :widgets
+  belongs_to :address
 end
