@@ -46,6 +46,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
+  # We use Factory Bot in place of fixtures
+  # to generate realistic test data
+  gem "factory_bot_rails"
+
+  # We use Faker to generate values for attributes
+  # in each factory
+  gem "faker"
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
