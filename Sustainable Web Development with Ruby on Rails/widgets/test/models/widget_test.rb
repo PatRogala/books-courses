@@ -33,4 +33,16 @@ class WidgetTest < ActiveSupport::TestCase
 
     assert_match(/price_must_be_positive/i, ex.message)
   end
+
+  test "when the name an empty string, it's normalized to nil" do
+    widget = Widget.new(name: "")
+    widget.validate
+    assert_nil widget.name
+  end
+
+  test "when name is just a lot of spaces, it's normalized to nil" do
+    widget = Widget.new(name: "       ")
+    widget.validate
+    assert_nil widget.name
+  end
 end
