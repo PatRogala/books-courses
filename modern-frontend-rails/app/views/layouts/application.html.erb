@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="py-12 px-6">
+      <%= render "layouts/nav" %>
+      <div class="container mx-auto">
+        <div class="mt-6">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+          <%= yield %>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
