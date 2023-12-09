@@ -5,3 +5,17 @@ services:
     build: .
     ports:
       - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    command: ./bin/dev
+
+  redis:
+    image: redis
+
+  database:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
