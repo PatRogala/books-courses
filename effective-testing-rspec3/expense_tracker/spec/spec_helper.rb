@@ -96,4 +96,8 @@ RSpec.configure do |config|
   # test failures related to randomization by passing the same `--seed` value
   # as the one that triggered the failure.
   Kernel.srand config.seed
+
+  config.when_first_matching_example_defined(:db) do
+    require_relative 'support/db'
+  end
 end
